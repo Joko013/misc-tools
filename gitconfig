@@ -1,0 +1,9 @@
+[pull]
+	rebase = true
+[alias]
+	pushf = push --force-with-lease
+	pull-rebase = pull --rebase origin master
+	pullr = !git pull --rebase origin master && git push --force-with-lease
+	reorder = "!GIT_SEQUENCE_EDITOR=\"sed -i -n 'h;1n;2p;g;p'\" git rebase -i HEAD~2"
+	bd = branch -d 
+
