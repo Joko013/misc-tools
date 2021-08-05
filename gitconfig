@@ -5,6 +5,8 @@
 	pull-rebase = pull --rebase origin master
 	pullr = !git pull --rebase origin master && git push --force-with-lease
 	reorder = "!GIT_SEQUENCE_EDITOR=\"sed -i -n 'h;1n;2p;g;p'\" git rebase -i HEAD~2"
-	bd = branch -d 
+	bd = branch -d
 	b = branch
-
+	c = checkout
+	com = !git checkout master && git pull
+	cb = checkout -b
